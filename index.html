@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HogarPlus</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
+
+    <link rel="stylesheet" href="./css/estilos.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">
+            <img
+              class="logo"
+              src="./imagenes/logo-llave.png"
+              alt="Logo LLave" />
+            <p>Hogar<span>Plus</span></p>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link active" aria-current="page" href="./index.html"
+                >Home</a
+              >
+              <a class="nav-link" href="./galeria.html">Galeria</a>
+              <a class="nav-link" href="./blog.html">Blog</a>
+              <a class="nav-link" href="./testimonios.html">Testimonios</a>
+              <a class="nav-link" href="./contacto.html">Contacto</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="publicidad">
+        <p>Nuevas propiedades todos los dias</p>
+      </div>
+
+      <div
+        id="carouselExampleAutoplaying"
+        class="carousel slide"
+        data-bs-ride="carousel">
+        <div class="carousel-inner custom-carousel">
+          <div class="carousel-item active">
+            <img
+              src="./imagenes/casa1.jpg"
+              class="d-block w-100"
+              alt="Imagen Casa" />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./imagenes/casa9.png"
+              class="d-block w-100"
+              alt="Imagen Casa" />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./imagenes/casa3.png"
+              class="d-block w-100"
+              alt="Imagen Casa" />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </header>
+
+    <main class="mt-4">
+      <section>
+        <h2 class="subtitulo">Novedades del mes</h2>
+
+        <div class="container mt-4">
+          <div class="row justify-content-center gy-3">
+            <div class="col-12 col-sm-10 col-md-10 col-lg-4 d-flex">
+              <div class="card shadow-sm border-0">
+                <img
+                  src="./imagenes/casa4.png"
+                  class="card-img-top"
+                  alt="Imagen Casa" />
+                <div class="card-body">
+                  <h5 class="card-title">Colonia Vista Alegre</h5>
+                  <p class="card-text descripcion opacidad">
+                    Hermosa casa de tres dormitorios con diseño moderno y
+                    acabados de alta calidad. Cuenta con amplios espacios,
+                    cocina equipada y un jardín privado perfecto para disfrutar
+                    en familia. ¡Lista para habitar!
+                  </p>
+                </div>
+                <ul
+                  class="list-group list-group-flush d-flex flex-row justify-content-around">
+                  <li
+                    class="list-group-item descripcion opacidad d-flex align-items-center">
+                    <img
+                      src="./imagenes/icono_dormitorio.svg"
+                      alt="Dormitorio"
+                      class="img-fluid" />
+                    <p class="m-0 ms-2">3</p>
+                  </li>
+                  <li
+                    class="list-group-item descripcion opacidad d-flex align-items-center">
+                    <img
+                      src="./imagenes/icono_wc.svg"
+                      alt="Baño"
+                      class="img-fluid" />
+                    <p class="m-0 ms-2">2</p>
+                  </li>
+                  <li
+                    class="list-group-item descripcion opacidad d-flex align-items-center">
+                    <img
+                      src="./imagenes/icono_estacionamiento.svg"
+                      alt="Estacionamiento"
+                      class="img-fluid" />
+                    <p class="m-0 ms-2">1</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-10 col-md-10 col-lg-4 d-flex">
+              <div class="card shadow-sm border-0">
+                <img
+                  src="./imagenes/casa5.png"
+                  class="card-img-top"
+                  alt="Imagen Casa" />
+                <div class="card-body">
+                  <h5 class="card-title">Residencial La Alameda</h5>
+                  <p class="card-text descripcion opacidad">
+                    Impresionante residencia de cuatro dormitorios, con grandes
+                    ventanales y mucha luz natural. Incluye una cocina moderna,
+                    sala de estar espaciosa y una terraza perfecta para
+                    reuniones.
+                  </p>
+                </div>
+                <ul
+                  class="list-group list-group-flush d-flex flex-row justify-content-around">
+                  <li
+                    class="list-group-item descripcion opacidad d-flex align-items-center">
+                    <img
+                      src="./imagenes/icono_dormitorio.svg"
+                      alt="Dormitorio"
+                      class="img-fluid" />
+                    <p class="m-0 ms-2">3</p>
+                  </li>
+                  <li
+                    class="list-group-item descripcion opacidad d-flex align-items-center">
+                    <img
+                      src="./imagenes/icono_wc.svg"
+                      alt="Baño"
+                      class="img-fluid" />
+                    <p class="m-0 ms-2">2</p>
+                  </li>
+                  <li
+                    class="list-group-item descripcion opacidad d-flex align-items-center">
+                    <img
+                      src="./imagenes/icono_estacionamiento.svg"
+                      alt="Estacionamiento"
+                      class="img-fluid" />
+                    <p class="m-0 ms-2">2</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-10 col-md-10 col-lg-4 d-flex">
+              <div class="card shadow-sm border-0">
+                <img
+                  src="./imagenes/casa6.png"
+                  class="card-img-top"
+                  alt="Imagen Casa" />
+                <div class="card-body">
+                  <h5 class="card-title">Barrio Los Robles</h5>
+                  <p class="card-text descripcion opacidad">
+                    Casa de dos dormitorios ideal para parejas o familias
+                    pequeñas. Ofrece un diseño funcional, jardín trasero y
+                    garaje. Cerca de parques y escuelas, es el lugar perfecto
+                    para crear nuevos recuerdos.
+                  </p>
+                </div>
+                <ul
+                  class="list-group list-group-flush d-flex flex-row justify-content-around">
+                  <li
+                    class="list-group-item descripcion opacidad d-flex align-items-center">
+                    <img
+                      src="./imagenes/icono_dormitorio.svg"
+                      alt="Dormitorio"
+                      class="img-fluid" />
+                    <p class="m-0 ms-2">4</p>
+                  </li>
+                  <li
+                    class="list-group-item descripcion opacidad d-flex align-items-center">
+                    <img
+                      src="./imagenes/icono_wc.svg"
+                      alt="Baño"
+                      class="img-fluid" />
+                    <p class="m-0 ms-2">3</p>
+                  </li>
+                  <li
+                    class="list-group-item descripcion opacidad d-flex align-items-center">
+                    <img
+                      src="./imagenes/icono_estacionamiento.svg"
+                      alt="Estacionamiento"
+                      class="img-fluid" />
+                    <p class="m-0 ms-2">2</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex w-100 justify-content-center mt-4">
+          <button
+            data-bs-toggle="collapse"
+            data-bs-target="#masTarjetas"
+            class="btn btn-primary w-25 border-0">
+            Mostrar más
+          </button>
+        </div>
+
+        <div class="collapse" id="masTarjetas">
+          <div class="container mt-4">
+            <div class="row justify-content-center gy-3">
+              <div class="col-12 col-sm-10 col-md-10 col-lg-4 d-flex">
+                <div class="card shadow-sm border-0">
+                  <img
+                    src="./imagenes/casa2.png"
+                    class="card-img-top"
+                    alt="Imagen Casa" />
+                  <div class="card-body">
+                    <h5 class="card-title">Urbanización El Encanto</h5>
+                    <p class="card-text descripcion opacidad">
+                      Espaciosa casa de tres dormitorios con techos altos y
+                      decoración contemporánea. Incluye un patio trasero con
+                      área de barbacoa y una sala de estar con chimenea.
+                    </p>
+                  </div>
+                  <ul
+                    class="list-group list-group-flush d-flex flex-row justify-content-around">
+                    <li
+                      class="list-group-item descripcion opacidad d-flex align-items-center">
+                      <img
+                        src="./imagenes/icono_dormitorio.svg"
+                        alt="Dormitorio"
+                        class="img-fluid" />
+                      <p class="m-0 ms-2">3</p>
+                    </li>
+                    <li
+                      class="list-group-item descripcion opacidad d-flex align-items-center">
+                      <img
+                        src="./imagenes/icono_wc.svg"
+                        alt="Baño"
+                        class="img-fluid" />
+                      <p class="m-0 ms-2">2</p>
+                    </li>
+                    <li
+                      class="list-group-item descripcion opacidad d-flex align-items-center">
+                      <img
+                        src="./imagenes/icono_estacionamiento.svg"
+                        alt="Estacionamiento"
+                        class="img-fluid" />
+                      <p class="m-0 ms-2">1</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-10 col-md-10 col-lg-4 d-flex">
+                <div class="card shadow-sm border-0">
+                  <img
+                    src="./imagenes/casa3.png"
+                    class="card-img-top"
+                    alt="Imagen Casa" />
+                  <div class="card-body">
+                    <h5 class="card-title">Conjunto Los Jardines</h5>
+                    <p class="card-text descripcion opacidad">
+                      Moderna vivienda de cuatro dormitorios con vistas
+                      panorámicas. Cuenta con una amplia cocina abierta, salón
+                      comedor y un jardín frontal con zona de juegos para niños.
+                    </p>
+                  </div>
+                  <ul
+                    class="list-group list-group-flush d-flex flex-row justify-content-around">
+                    <li
+                      class="list-group-item descripcion opacidad d-flex align-items-center">
+                      <img
+                        src="./imagenes/icono_dormitorio.svg"
+                        alt="Dormitorio"
+                        class="img-fluid" />
+                      <p class="m-0 ms-2">3</p>
+                    </li>
+                    <li
+                      class="list-group-item descripcion opacidad d-flex align-items-center">
+                      <img
+                        src="./imagenes/icono_wc.svg"
+                        alt="Baño"
+                        class="img-fluid" />
+                      <p class="m-0 ms-2">2</p>
+                    </li>
+                    <li
+                      class="list-group-item descripcion opacidad d-flex align-items-center">
+                      <img
+                        src="./imagenes/icono_estacionamiento.svg"
+                        alt="Estacionamiento"
+                        class="img-fluid" />
+                      <p class="m-0 ms-2">2</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-10 col-md-10 col-lg-4 d-flex">
+                <div class="card shadow-sm border-0">
+                  <img
+                    src="./imagenes/casa7.png"
+                    class="card-img-top"
+                    alt="Imagen Casa" />
+                  <div class="card-body">
+                    <h5 class="card-title">Villa Los Cipreses</h5>
+                    <p class="card-text descripcion opacidad">
+                      Elegante casa de dos dormitorios ubicada en una zona
+                      tranquila. Ideal para quienes buscan un hogar acogedor con
+                      jardín privado, garaje y una excelente distribución
+                      interior.
+                    </p>
+                  </div>
+                  <ul
+                    class="list-group list-group-flush d-flex flex-row justify-content-around">
+                    <li
+                      class="list-group-item descripcion opacidad d-flex align-items-center">
+                      <img
+                        src="./imagenes/icono_dormitorio.svg"
+                        alt="Dormitorio"
+                        class="img-fluid" />
+                      <p class="m-0 ms-2">4</p>
+                    </li>
+                    <li
+                      class="list-group-item descripcion opacidad d-flex align-items-center">
+                      <img
+                        src="./imagenes/icono_wc.svg"
+                        alt="Baño"
+                        class="img-fluid" />
+                      <p class="m-0 ms-2">3</p>
+                    </li>
+                    <li
+                      class="list-group-item descripcion opacidad d-flex align-items-center">
+                      <img
+                        src="./imagenes/icono_estacionamiento.svg"
+                        alt="Estacionamiento"
+                        class="img-fluid" />
+                      <p class="m-0 ms-2">2</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container mt-4 mb-4">
+            <div class="row justify-content-center gy-3">
+              <div class="col-12 col-sm-10 col-md-10 col-lg-4 d-flex">
+                <div class="card shadow-sm border-0">
+                  <img
+                    src="./imagenes/casa14.png"
+                    class="card-img-top"
+                    alt="Imagen Casa" />
+                  <div class="card-body">
+                    <h5 class="card-title">Parque San Miguel</h5>
+                    <p class="card-text descripcion opacidad">
+                      Encantadora casa de tres dormitorios con una arquitectura
+                      elegante y espacios bien distribuidos. Incluye una cocina
+                      moderna, sala de estar luminosa y un jardín amplio ideal
+                      para eventos al aire libre.
+                    </p>
+                  </div>
+                  <ul
+                    class="list-group list-group-flush d-flex flex-row justify-content-around">
+                    <li
+                      class="list-group-item descripcion opacidad d-flex align-items-center">
+                      <img
+                        src="./imagenes/icono_dormitorio.svg"
+                        alt="Dormitorio"
+                        class="img-fluid" />
+                      <p class="m-0 ms-2">3</p>
+                    </li>
+                    <li
+                      class="list-group-item descripcion opacidad d-flex align-items-center">
+                      <img
+                        src="./imagenes/icono_wc.svg"
+                        alt="Baño"
+                        class="img-fluid" />
+                      <p class="m-0 ms-2">2</p>
+                    </li>
+                    <li
+                      class="list-group-item descripcion opacidad d-flex align-items-center">
+                      <img
+                        src="./imagenes/icono_estacionamiento.svg"
+                        alt="Estacionamiento"
+                        class="img-fluid" />
+                      <p class="m-0 ms-2">1</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-10 col-md-10 col-lg-4 d-flex">
+                <div class="card shadow-sm border-0">
+                  <img
+                    src="./imagenes/casa10.png"
+                    class="card-img-top"
+                    alt="Imagen Casa" />
+                  <div class="card-body">
+                    <h5 class="card-title">Urbanización El Pinar</h5>
+                    <p class="card-text descripcion opacidad">
+                      Magnífica casa de cuatro dormitorios con acabados de lujo.
+                      Dispone de una amplia cocina gourmet, sala de estar con
+                      chimenea y un balcón con vistas panorámicas. Perfecta para
+                      quienes buscan comodidad y estilo.
+                    </p>
+                  </div>
+                  <ul
+                    class="list-group list-group-flush d-flex flex-row justify-content-around">
+                    <li
+                      class="list-group-item descripcion opacidad d-flex align-items-center">
+                      <img
+                        src="./imagenes/icono_dormitorio.svg"
+                        alt="Dormitorio"
+                        class="img-fluid" />
+                      <p class="m-0 ms-2">3</p>
+                    </li>
+                    <li
+                      class="list-group-item descripcion opacidad d-flex align-items-center">
+                      <img
+                        src="./imagenes/icono_wc.svg"
+                        alt="Baño"
+                        class="img-fluid" />
+                      <p class="m-0 ms-2">2</p>
+                    </li>
+                    <li
+                      class="list-group-item descripcion opacidad d-flex align-items-center">
+                      <img
+                        src="./imagenes/icono_estacionamiento.svg"
+                        alt="Estacionamiento"
+                        class="img-fluid" />
+                      <p class="m-0 ms-2">2</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-10 col-md-10 col-lg-4 d-flex">
+                <div class="card shadow-sm border-0">
+                  <img
+                    src="./imagenes/casa15.png"
+                    class="card-img-top"
+                    alt="Imagen Casa" />
+                  <div class="card-body">
+                    <h5 class="card-title">Villa Las Flores</h5>
+                    <p class="card-text descripcion opacidad">
+                      Acogedora casa de dos dormitorios con diseño
+                      contemporáneo. Cuenta con una cocina abierta, sala de
+                      estar confortable y un patio trasero con área de parrilla.
+                      Ubicada en una zona tranquila y segura.
+                    </p>
+                  </div>
+                  <ul
+                    class="list-group list-group-flush d-flex flex-row justify-content-around">
+                    <li
+                      class="list-group-item descripcion opacidad d-flex align-items-center">
+                      <img
+                        src="./imagenes/icono_dormitorio.svg"
+                        alt="Dormitorio"
+                        class="img-fluid" />
+                      <p class="m-0 ms-2">4</p>
+                    </li>
+                    <li
+                      class="list-group-item descripcion opacidad d-flex align-items-center">
+                      <img
+                        src="./imagenes/icono_wc.svg"
+                        alt="Baño"
+                        class="img-fluid" />
+                      <p class="m-0 ms-2">3</p>
+                    </li>
+                    <li
+                      class="list-group-item descripcion opacidad d-flex align-items-center">
+                      <img
+                        src="./imagenes/icono_estacionamiento.svg"
+                        alt="Estacionamiento"
+                        class="img-fluid" />
+                      <p class="m-0 ms-2">2</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-4 mb-5">
+        <div class="card text-bg-dark rounded-0 border-0 p-5">
+          <div class="row justify-content-around align-items-center gy-3">
+            <div class="col-lg-3 text-center">
+              <img
+                src="./imagenes/icono1.svg"
+                alt="Imagen Candado"
+                class="img-fluid mb-3" />
+              <div class="mb-3">
+                <h4 class="card-title">Seguridad</h4>
+                <p class="card-text descripcion">
+                  Nuestra prioridad es garantizar la seguridad integral de cada
+                  cliente. Implementamos medidas avanzadas para proteger su
+                  privacidad y tranquilidad.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-3 text-center">
+              <img
+                src="./imagenes/icono3.svg"
+                alt="Imagen Reloj"
+                class="img-fluid mb-3" />
+              <div class="mb-3">
+                <h4 class="card-title">Búsqueda Rápida y Eficaz</h4>
+                <p class="card-text descripcion">
+                  Facilitamos una experiencia de búsqueda rápida y eficaz,
+                  proporcionando herramientas intuitivas que simplifican el
+                  proceso de encontrar lo que necesitas.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-3 text-center">
+              <img
+                src="./imagenes/businessman.png"
+                alt="Imagen Hombre"
+                class="img-fluid mb-3 imagen-hombre" />
+              <div class="mb-3">
+                <h4 class="card-title">Experiencia Personalizada</h4>
+                <p class="card-text descripcion">
+                  Nos esforzamos por ofrecer una experiencia personalizada,
+                  adaptando cada búsqueda a tus preferencias y necesidades
+                  específicas para garantizar tu satisfacción.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container">
+        <div class="row mt-4 justify-content-center">
+          <div class="col-md-8">
+            <h3 class="text-center mb-4">Nuestro Blog</h3>
+            <article class="card shadow-sm border-0 mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <div class="img-container h-100">
+                    <img
+                      src="./imagenes/casa13.png"
+                      class="img-fluid rounded-start h-100"
+                      alt="Imagen Casa" />
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Consejos para Comprar tu Primera Casa
+                    </h5>
+                    <p class="card-text descripcion opacidad">
+                      Comprar una casa por primera vez puede ser una experiencia
+                      emocionante y desafiante. Descubre nuestros consejos
+                      esenciales para tomar decisiones informadas y encontrar el
+                      hogar perfecto para ti y tu familia.
+                    </p>
+                    <p
+                      class="card-text descripcion opacidad descripcion opacidad">
+                      <small class="text-body-secondary"
+                        >Última actualización hace 3 minutos.</small
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="card shadow-sm border-0 mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <div class="img-container h-100">
+                    <img
+                      src="./imagenes/barrio.png"
+                      class="img-fluid rounded-start h-100"
+                      alt="Imagen Casa" />
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Cómo Elegir el Barrio Perfecto</h5>
+                    <p
+                      class="card-text descripcion opacidad descripcion opacidad">
+                      La ubicación es uno de los factores más importantes al
+                      comprar una casa. En este artículo, te guiamos a través de
+                      los aspectos clave a considerar para elegir el barrio que
+                      mejor se adapte a tu estilo de vida y necesidades.
+                    </p>
+                    <p class="card-text descripcion opacidad">
+                      <small class="text-body-secondary"
+                        >Última actualización hace 15 minutos.</small
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="card shadow-sm border-0 mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <div class="img-container h-100">
+                    <img
+                      src="./imagenes/casa11.png"
+                      class="img-fluid rounded-start h-100"
+                      alt="Imagen Casa" />
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Tendencias en Diseño de Interiores
+                    </h5>
+                    <p class="card-text descripcion opacidad">
+                      Mantente al día con las últimas tendencias en diseño de
+                      interiores para transformar tu casa en un hogar moderno y
+                      acogedor. Exploramos colores, estilos y elementos
+                      decorativos que están marcando tendencia este año.
+                    </p>
+                    <p class="card-text descripcion opacidad">
+                      <small class="text-body-secondary"
+                        >Última actualización hace 22 minutos.</small
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-4">
+            <div class="text-center">
+              <h3 class="text-center mb-4">Testimoniales</h3>
+
+              <div
+                id="testimonialCarousel"
+                class="carousel slide d-md-none gx-2"
+                data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item h-100 active">
+                    <div
+                      class="card bg-info shadow-sm border-0 mb-2 text-light p-4 rounded-2">
+                      <blockquote class="small">
+                        "Estoy muy satisfecho con el servicio recibido. Encontré
+                        la casa perfecta para mi familia y todo el proceso fue
+                        rápido y eficiente."
+                      </blockquote>
+                      <p class="text-light small mt-1">María Fernández</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item h-100">
+                    <div
+                      class="card bg-info shadow-sm border-0 mb-2 text-light p-4 rounded-2">
+                      <blockquote class="small">
+                        "Recomiendo totalmente los servicios de HogarPlus. Nos
+                        ayudaron a encontrar la casa ideal con todas las
+                        características que buscábamos."
+                      </blockquote>
+                      <p class="text-light small mt-1">Carlos Pérez</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item h-100">
+                    <div
+                      class="card bg-info shadow-sm border-0 mb-2 text-light p-4 rounded-2">
+                      <blockquote class="small">
+                        "La atención recibida fue excelente. Encontré
+                        exactamente lo que necesitaba gracias a la dedicación y
+                        profesionalismo del equipo de HogarPlus."
+                      </blockquote>
+                      <p class="text-light small mt-1">Melisa Rodríguez</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-none d-md-block">
+                <div
+                  class="card bg-info shadow-sm border-0 mb-2 text-light p-4 rounded-2">
+                  <blockquote class="small">
+                    "Estoy muy satisfecho con el servicio recibido. Encontré la
+                    casa perfecta para mi familia y todo el proceso fue rápido y
+                    eficiente."
+                  </blockquote>
+                  <p class="text-light small mt-1">María Fernández</p>
+                </div>
+                <div
+                  class="card bg-info shadow-sm border-0 mb-2 text-light p-4 rounded-2">
+                  <blockquote class="small">
+                    "Recomiendo totalmente los servicios de HogarPlus. Nos
+                    ayudaron a encontrar la casa ideal con todas las
+                    características que buscábamos."
+                  </blockquote>
+                  <p class="text-light small mt-1">Carlos Pérez</p>
+                </div>
+                <div
+                  class="card bg-info shadow-sm border-0 mb-2 text-light p-4 rounded-2">
+                  <blockquote class="small">
+                    "La atención recibida fue excelente. Encontré exactamente lo
+                    que necesitaba gracias a la dedicación y profesionalismo del
+                    equipo de HogarPlus."
+                  </blockquote>
+                  <p class="text-light small mt-1">Melisa Rodríguez</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-dark p-2 text-light text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5 class="small mt-4">Contacto</h5>
+            <p class="m-0 xsmall">Correo electrónico: hogarplus@gmail.com</p>
+            <p class="m-0 xsmall">Teléfono: +123456789</p>
+          </div>
+          <div class="col-md-4">
+            <h5 class="small mt-4">Horario de atención</h5>
+            <p class="m-0 xsmall">Lunes a Viernes: 9am - 6pm</p>
+            <p class="m-0 xsmall">Sábados y Domingos: Cerrado</p>
+          </div>
+          <div class="col-md-4">
+            <h5 class="small mt-4">Dirección</h5>
+            <p class="m-0 xsmall">Villegas 355</p>
+            <p class="m-0 xsmall">Santa Rosa, Argentina</p>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col">
+            <p class="xsmall">
+              &copy; 2024 HogarPlus. Todos los derechos reservados.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,201 @@
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  src: url('./assets/fonts/Montserrat-Regular.ttf');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./assets/fonts/Montserrat-Bold.ttf');
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f2f2f2;
+}
+/* -------- CLASES PROPIAS ---------- */
+.xsmall {
+  font-size: 12px;
+}
+.small {
+  font-size: 14px;
+}
+.opacidad {
+  opacity: 0.5;
+}
+.logo {
+  width: 50px;
+  height: 50px;
+}
+.imagen-hombre {
+  width: 70px;
+  height: 70px;
+}
+.publicidad {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #555555;
+  padding: 8px;
+  border-top: 1.5px solid #fff;
+}
+.publicidad p {
+  margin: 0;
+  color: white;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.subtitulo {
+  text-align: center;
+  text-transform: uppercase;
+}
+.descripcion {
+  font-size: 15px;
+}
+.card-banner {
+  height: 300px;
+  object-fit: cover;
+  opacity: 0.6;
+}
+
+.imagen-galeria {
+  width: 100%;
+  height: 200px;
+}
+.imagen-galeria img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.max-imagen {
+  max-width: 400px;
+  max-height: 400px;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.height-testimonios {
+  height: 280px;
+}
+
+/* ------------ */
+
+/* --------- Clases Bootstrap -----------*/
+
+/* Navbar */
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+.navbar-brand img.logo {
+  height: 45px;
+}
+.navbar-brand p {
+  margin: 0;
+  font-size: 16px;
+}
+.navbar-brand p span {
+  font-weight: bold;
+}
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+.nav-link {
+  font-size: 16px;
+}
+/* ------------ */
+
+/* Carousel */
+
+.custom-carousel {
+  height: 600px;
+}
+.custom-carousel .carousel-item {
+  height: 100%;
+}
+.custom-carousel .carousel-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* ------------ */
+
+/* Card */
+.card {
+  width: 100%;
+}
+.card-title {
+  font-size: 20px;
+}
+.card-img-top {
+  height: 300px;
+}
+.card-link {
+  width: 100%;
+  background-color: black;
+  color: #fff;
+}
+
+/* Imagen */
+.img-container {
+  overflow: hidden;
+}
+.img-fluid {
+  object-fit: cover;
+}
+/* ------------ */
+
+/* Boton */
+.btn {
+  font-size: 16px;
+}
+.btn:hover {
+  background-color: #212529;
+  color: #fff;
+}
+
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:focus:active {
+  background-color: #5a6268 !important;
+  border-color: #545b62 !important;
+  color: white !important;
+  box-shadow: none !important;
+}
+.btn-primary {
+  background-color: #6c757d;
+  color: white;
+}
+
+/* Formulario */
+.form-control {
+  font-size: 16px;
+}
+
+.form-control::placeholder {
+  color: #6c757d;
+  font-size: 16px;
+  opacity: 0.8;
+}
+/* ------------ */
+
+/* Textos */
+.fs-6 {
+  font-size: 18px !important;
+}
+.fs-4 {
+  font-size: 24px !important;
+}
+/* ------------ */
+.list-group-item {
+  width: 100%;
+}
+.list-group-item:hover {
+  background-color: #f8f8f8;
+  color: #fff;
+}
